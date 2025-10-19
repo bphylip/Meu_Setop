@@ -1,0 +1,128 @@
+@import url(/src/styles/global/imports.css);
+
+.btn {
+    margin-top: 1rem;
+    display: inline-block;
+    padding: 1rem 2.8rem;
+    padding-right: 3rem;
+    background: linear-gradient(130deg, var(--primary-color) 93%, transparent 90%);
+    color: white;
+    cursor: pointer;
+    font-size: 1.7rem;
+    transition: linear, .2s, smooth;
+
+    &:hover {
+        transform: scale(1.1);
+    }
+}
+
+.btn2 {
+    margin-top: 1rem;
+    display: inline-block;
+    position: relative;
+    bottom: 0;
+    width: 13rem;
+    padding: 1rem 2.8rem;
+    padding-right: 3rem;
+    background: linear-gradient(130deg, var(--primary-color) 93%, transparent 90%);
+    color: white;
+    cursor: pointer;
+    font-size: 1.7rem;
+    transition: linear, .2s, smooth;
+
+    &:hover {
+        transform: scale(1.1);
+    }
+}
+
+
+
+
+/* go Top btn  */
+
+.goTop{
+    position: fixed;
+    z-index: 999999;
+    bottom: 40px;
+    right: 30px;
+    width: 4rem;
+    height: 4rem;
+    background-color: var(--primary-color);
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    color: #fff;
+    outline: none;
+    display: none;
+    transition: linear, .2s, smooth;
+
+    &:hover{
+        transform: translateY(-.5rem);
+    }
+}
+
+
+
+.btn-banner {
+    margin-top: 1rem;
+    margin-left: 3rem;
+    margin-right: 3rem;
+    width: 20rem;
+    display: inline-block;
+    padding: 1rem 2.8rem;
+    padding-right: 3rem;
+    background: var(--primary-color);
+    border-radius: .2rem;
+    color: white;
+    cursor: pointer;
+    font-size: 1.7rem;
+    transition: linear .2s;
+
+    &:hover {
+        transform: scale(1.1);
+    }
+
+}
+
+
+.btn-wa {
+    margin-top: 1rem;
+    margin-left: 3rem;
+    margin-right: 3rem;
+    width: 20rem;
+    display: inline-block;
+    padding: 1rem 2.8rem;
+    padding-right: 3rem;
+    background: var(--wa);
+    border-radius: .2rem;
+    color: white;
+    cursor: pointer;
+    font-size: 1.7rem;
+    transition: linear .2s;
+
+    &:hover {
+        transform: scale(1.1);
+    }
+
+}
+
+.btn-tg {
+    margin-top: 1rem;
+    margin-left: 3rem;
+    margin-right: 3rem;
+    width: 20rem;
+    display: inline-block;
+    padding: 1rem 2.8rem;
+    padding-right: 3rem;
+    background: var(--tg);
+    border-radius: .2rem;
+    color: white;
+    cursor: pointer;
+    font-size: 1.7rem;
+    transition: linear .2s;
+
+    &:hover {
+        transform: scale(1.1);
+    }
+
+}
