@@ -16,7 +16,7 @@ class Popular extends HTMLElement {
 
                     <figure class="card-banner img-holder" style="--width: 64; --height: 64;">
                       <img src="/src/assets/img/pages/posts/guia-de-compra-pc/pc-gm.webp"
-                        width="64" height="64" loading="lazy" alt="Creating is a privilege but it’s also a gift"
+                        width="64" height="64" loading="lazy" alt="Banner ilustrativo artigo"
                         class="img-cover">
                     </figure>
 
@@ -28,9 +28,9 @@ class Popular extends HTMLElement {
                       </h4>
 
                       <div class="warpper">
-                        <p class="card-subtitle">15 mins read</p>
+                        <p class="card-subtitle">20 mins read</p>
 
-                        <time class="publish-date" datetime="2022-04-15">24 Jun 2025</time>
+                        <time class="publish-date" datetime="2025-09-11">11 set 2025</time>
                       </div>
 
                     </div>
@@ -44,7 +44,7 @@ class Popular extends HTMLElement {
 
                     <figure class="card-banner img-holder" style="--width: 64; --height: 64;">
                       <img src="/src/assets/img/pages/posts/como-escolher-placa-de-video-ideal//123.webp" width="64" height="64" loading="lazy"
-                        alt="Being unique is better than being perfect" class="img-cover">
+                        alt="Banner ilustrativo artigo" class="img-cover">
                     </figure>
 
                     <div class="card-content">
@@ -58,7 +58,7 @@ class Popular extends HTMLElement {
                       <div class="warpper">
                         <p class="card-subtitle">15 mins read</p>
 
-                        <time class="publish-date" datetime="2022-04-15">15 April 2022</time>
+                        <time class="publish-date" datetime="2025-08-08">08 ago 2025</time>
                       </div>
 
                     </div>
@@ -71,7 +71,7 @@ class Popular extends HTMLElement {
 
                     <figure class="card-banner img-holder" style="--width: 64; --height: 64;">
                       <img src="/src/assets/img/pages/posts/montando-computador-entenda-cada-peca/banner.jpg" width="64" height="64" loading="lazy"
-                        alt="Every day, in every city and town across the country" class="img-cover">
+                        alt="Banner ilustrativo artigo" class="img-cover">
                     </figure>
 
                     <div class="card-content">
@@ -83,7 +83,7 @@ class Popular extends HTMLElement {
                       <div class="warpper">
                         <p class="card-subtitle">15 mins read</p>
 
-                        <time class="publish-date" datetime="2022-04-15">15 April 2022</time>
+                        <time class="publish-date" datetime="2025-08-22">22 ago 2025</time>
                       </div>
 
                     </div>
@@ -96,7 +96,7 @@ class Popular extends HTMLElement {
 
                     <figure class="card-banner img-holder" style="--width: 64; --height: 64;">
                       <img src="/src/assets/img/pages/posts/melhores-monitores-para-jogos-e-multitarefa/banner.avif" width="64" height="64" loading="lazy"
-                        alt="Your voice, your mind, your story, your vision" class="img-cover">
+                        alt="Banner ilustrativo artigo" class="img-cover">
                     </figure>
 
                     <div class="card-content">
@@ -106,9 +106,9 @@ class Popular extends HTMLElement {
                       </h4>
 
                       <div class="warpper">
-                        <p class="card-subtitle">15 mins read</p>
+                        <p class="card-subtitle">10 mins read</p>
 
-                        <time class="publish-date" datetime="2022-04-15">15 April 2022</time>
+                        <time class="publish-date" datetime="2025-08-06">06 ago 2025</time>
                       </div>
 
                     </div>
@@ -121,7 +121,7 @@ class Popular extends HTMLElement {
 
                     <figure class="card-banner img-holder" style="--width: 64; --height: 64;">
                       <img src="/src/assets/img/pages/posts/upgrade-pc-por-onde-comecar/banner.png" width="64" height="64" loading="lazy"
-                        alt="Being unique is better than being perfect" class="img-cover">
+                        alt="Banner ilustrativo artigo" class="img-cover">
                     </figure>
 
                     <div class="card-content">
@@ -133,7 +133,7 @@ class Popular extends HTMLElement {
                       <div class="warpper">
                         <p class="card-subtitle">15 mins read</p>
 
-                        <time class="publish-date" datetime="2022-04-15">15 April 2022</time>
+                        <time class="publish-date" datetime="2025-08-01">01 ago 2025</time>
                       </div>
 
                     </div>
@@ -169,7 +169,7 @@ class RecomendationPost extends HTMLElement {
 
                     <figure class="card-banner img-holder" style="--width: 64; --height: 64;">
                       <img src="/src/assets/img/pages/posts/como-escolher-fonte-pc-gamer/banner.jpg"
-                        width="64" height="64" loading="lazy" alt="Creating is a privilege but it’s also a gift"
+                        width="64" height="64" loading="lazy" alt="Banner ilustrativo artigo"
                         class="img-cover">
                     </figure>
 
@@ -184,7 +184,7 @@ class RecomendationPost extends HTMLElement {
                       <div class="warpper">
                         <p class="card-subtitle">15 mins read</p>
 
-                        <time class="publish-date" datetime="2022-04-15">24 Jun 2025</time>
+                        <time class="publish-date" datetime="2025-08-25">25 ago 2025</time>
                       </div>
 
                     </div>
@@ -212,7 +212,7 @@ class RecomendationPost extends HTMLElement {
                       <div class="warpper">
                         <p class="card-subtitle">15 mins read</p>
 
-                        <time class="publish-date" datetime="2022-04-15">15 April 2022</time>
+                        <time class="publish-date" datetime="2025-08-15">15 ago 2025</time>
                       </div>
 
                     </div>
@@ -237,9 +237,9 @@ class RecomendationPost extends HTMLElement {
                       </h4>
 
                       <div class="warpper">
-                        <p class="card-subtitle">15 mins read</p>
+                        <p class="card-subtitle">20 mins read</p>
 
-                        <time class="publish-date" datetime="2022-04-15">15 April 2022</time>
+                        <time class="publish-date" datetime="2025-08-29">29 ago 2025</time>
                       </div>
 
                     </div>
@@ -266,7 +266,7 @@ class RecomendationPost extends HTMLElement {
                       <div class="warpper">
                         <p class="card-subtitle">15 mins read</p>
 
-                        <time class="publish-date" datetime="2022-04-15">15 April 2022</time>
+                        <time class="publish-date" datetime="2025-05-11">11 ago 2025</time>
                       </div>
 
                     </div>
