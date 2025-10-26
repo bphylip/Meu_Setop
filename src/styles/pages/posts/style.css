@@ -927,9 +927,9 @@ ion-icon {
   background-position: center;
   background-attachment: fixed;
   background-blend-mode: multiply;
-  margin-top: 9rem;
+  margin-top: 1rem;
   margin-bottom: 3rem;
-  /* padding-bottom: 10rem; */
+
 
 
   .glow {
