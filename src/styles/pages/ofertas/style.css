@@ -121,7 +121,7 @@ section {
     background: var(--soft-bg);
     box-shadow: 0px 0px 15px .1rem var(--second-color);
     transition: ease .3s;
-    border-radius: 1rem;
+    /* border-radius: 1rem; */
     height: auto !important;
 
     &:hover {
@@ -148,7 +148,7 @@ section {
         height: 150px;
         padding: 30px;
         background: var(--white);
-        border-radius: 0.5rem 0.5rem 0 0;
+        /* border-radius: 0.5rem 0.5rem 0 0; */
 
         img {
             max-width: 100%;
@@ -300,7 +300,7 @@ section {
     justify-content: flex-end;
     align-items: center;
     margin: auto;
-    border-radius: 0 0 1rem 1rem;
+    /* border-radius: 0 0 1rem 1rem; */
 
     &:hover {
         background: var(--red);
