@@ -1,8 +1,5 @@
-
-// Array of objects mapping product IDs to new href links
 const productLinks = [
     { id: 'bphylip-profile-img', href: 'https://www.youtube.com/' },
-
 
     // Monitores
     { id: 'monitor-lg-LG24GS60F-B', href: 'https://mercadolivre.com/sec/2R4BM7T' },
@@ -17,7 +14,6 @@ const productLinks = [
     { id: 'monitor-AOC-HERO-QUAD', href: 'https://mercadolivre.com/sec/12ktB4t' },
     { id: 'monitor-Aoc-Destiny-25', href: 'https://mercadolivre.com/sec/1naxYgA' },
     { id: 'monitor-Samsung-Odyssey-G40-25', href: 'https://mercadolivre.com/sec/1PopFXC' },
-
 
     // Processador
     { id: 'AMD-Ryzen-5-5600gt', href: 'https://mercadolivre.com/sec/2ckuS8R' },
@@ -38,7 +34,6 @@ const productLinks = [
 
     // Water Cooler
     { id: 'WC-Deepcool-LE240V2', href: 'https://mercadolivre.com/sec/2Jm98ys' },
-
 
     // Placas mãe
     { id: 'mb-Asus-TUF-GAMING-B650M-PLUS', href: 'https://mercadolivre.com/sec/2Ae2msA' },//específico
@@ -64,48 +59,29 @@ const productLinks = [
     { id: 'MSI-magA600DN-600W', href: 'https://mercadolivre.com/sec/1QSWYJs' },
     { id: 'GAMEMAX-Gp650-650W', href: 'https://mercadolivre.com/sec/11tf4EK' },
     { id: 'COOLER-MASTER-850W', href: 'https://mercadolivre.com/sec/2E2pw6h' },
-
-
-    // Gabinete
-
-
-
-
-
-
 ];
 
 
-// Function to update product links
 function updateProductLinks() {
-    // Select all relevant elements (links and cards)
+
+    // Seleciona todos os elementos relevantes (links e cards)
     const productElements = document.querySelectorAll('.link');
 
-    // Loop through each element
     productElements.forEach(element => {
-        // Get the product ID from the data-id attribute
+
         const productId = element.getAttribute('id');
 
-        // If the product ID exists, find the corresponding href in the array
         if (productId) {
             const product = productLinks.find(p => p.id === productId);
+
             if (product) {
-                // If the element is a link, update the href attribute
                 if (element.tagName === 'A') {
                     element.setAttribute('href', product.href);
                 }
-                // If the element is a card, create a link and append it
-                // else if (element.classList.contains('product-card')) {
-                //     const link = document.createElement('a');
-                //     link.href = product.href;
-                //     link.textContent = 'View Product';
-                //     element.appendChild(link); 
-                //     // Append the link to the card
-                // }
+            } else {
+                console.warn(`ID de produto não encontrado no array productLinks: ${productId}`);
             }
         }
     });
 }
-
-// Call the function to update the links
 document.addEventListener('DOMContentLoaded', updateProductLinks);
