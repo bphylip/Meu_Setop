@@ -128,6 +128,14 @@ section {
         transform: translateY(-5px);
     }
 
+    & > a { 
+        display: flex;
+        flex-direction: column;
+        height: 100%; 
+        justify-content: space-between; 
+        text-decoration: none; 
+    }
+
     .badge {
         position: absolute;
         left: 0;
@@ -198,6 +206,7 @@ section {
             display: flex;
             justify-content: space-between;
             align-items: center;
+            margin-top: auto;
 
 
             .product-price {
@@ -218,7 +227,7 @@ section {
                 text-align: right;
 
                 a {
-                    display: inline-block;
+                    /* display: inline-block; */
                     margin-left: 5px;
                     color: #e1e1e1;
                     transition: 0.3s;
@@ -291,15 +300,13 @@ section {
 
 
 .product-container .buyBtn {
-    position: relative;
-    bottom: 0;
+
     display: flex;
     background: var(--primary-color);
     width: 100%;
     height: auto;
     justify-content: flex-end;
     align-items: center;
-    margin: auto;
     /* border-radius: 0 0 1rem 1rem; */
 
     &:hover {
