@@ -74,7 +74,8 @@ section {
             width: 60rem;
 
             span {
-                font-size: 2rem;
+                font-size: 2.5rem;
+                font-weight: 400;
                 color: var(--primary-color);
                 display: block;
             }
