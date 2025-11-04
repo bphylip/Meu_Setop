@@ -140,10 +140,19 @@ function generateStars(rating) {
 
 // Cria o model HTML do Card
 function createProductCardHTML(product) {
-    // Quebra o preço
-    const priceParts = product.price.split(',');
-    const integerPart = priceParts[0];
-    const decimalPart = priceParts.length > 1 ? priceParts[1] : '00';
+    const numericPrice = parseFloat(product.price.replace(',', '.'));
+    //Formatar o número no padrão BRL
+    const formattedPrice = new Intl.NumberFormat('pt-BR', {
+        style: 'currency',
+        currency: 'BRL',
+        minimumFractionDigits: 2
+    }).format(numericPrice);
+
+    //Separar o preço formatado em partes (após a formatação)
+    const priceWithoutCurrency = formattedPrice.replace(/R\$\s*/, '');
+    const priceParts = priceWithoutCurrency.split(',');
+    const integerPart = priceParts[0]; // Ex: "1.200"
+    const decimalPart = priceParts.length > 1 ? priceParts[1] : '00'; // Ex: "50"
 
     const stars = generateStars(product.rating);
 
@@ -157,7 +166,7 @@ function createProductCardHTML(product) {
                 <div class="product-details">
                     <span class="product-catagory">${product.category}</span>
                     <h4>${product.title}</h4>
-                    <p>${product.description}</p>
+                    <!-- <p>${product.description}</p> -->
 
                     <div class="rgb-divider"></div>
                     <div class="product-bottom-details">
@@ -175,12 +184,27 @@ function createProductCardHTML(product) {
     `;
 }
 
+//criando função de shuffle card.
+function shuffleArray(productsData) {
+    let currentIndex = productsData.length, randomIndex;
+    while (currentIndex !== 0) {
+        randomIndex = Math.floor(Math.random() * currentIndex);
+        currentIndex--;
+        [productsData[currentIndex], productsData[randomIndex]] = [
+            productsData[randomIndex], productsData[currentIndex]];
+    }
+
+    return productsData;
+}
+
 //Injeta os Cards no HTML e Sincroniza os Links
 document.addEventListener('DOMContentLoaded', () => {
     const productContainer = document.getElementById('product-list');
     let allCardsHtml = '';
 
-    productsData.forEach(product => {
+    const shuffledProducts = shuffleArray(productsData);
+
+    shuffledProducts.forEach(product => {
         allCardsHtml += createProductCardHTML(product);
     });
 
