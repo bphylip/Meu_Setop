@@ -104,6 +104,16 @@
 
 } */
 
+:host {
+    display: block;
+    width: 100%;
+    margin: 0 !important;
+    padding: 0 !important;
+    box-sizing: border-box;
+    all: initial; /* ← este zera todas as heranças externas */
+    font-family: inherit;
+  }
+
 
 * {
     font-family: "Nunito", serif;
@@ -120,7 +130,7 @@
 
 html {
     font-size: 62.5%;
-    scroll-behavior: smooth;
+    /* scroll-behavior: smooth;
     scroll-padding-top: 5rem;
     overflow-x: hidden;
 
@@ -134,7 +144,11 @@ html {
 
     &::-webkit-scrollbar-thumb {
         background: var(--primary-color);
-    }
+    } */
+}
+
+section {
+    padding: 5rem 9%;
 }
 
 .header {

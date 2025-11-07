@@ -15,7 +15,9 @@ class MSHeader extends HTMLElement {
           <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
   
           <!-- Importa o CSS isolado do header -->
-          <link rel="stylesheet" href="/src/styles/components/header.css">
+            <style>
+             @import "/src/styles/components/header.css";
+            </style>
   
           ${html}
         `;

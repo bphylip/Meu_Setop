@@ -653,42 +653,86 @@ ion-icon {
 \*-----------------------------------*/
 
 
-@media (max-width:450px) {
+@media (max-width: 450px) {
 
-  html {
-    font-size: 50%;
+  html, body {
+    overflow-x: hidden !important;
   }
 
+  section {
+    padding: 3rem 2rem !important;
+  }
 
+  .container {
+    width: 100% !important;
+    max-width: 100% !important;
+    padding: 0 1rem !important;
+    margin: 0 auto !important;
+    overflow-x: hidden !important;
+  }
 
+  .post-main {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    width: 100% !important;
+    overflow-x: hidden !important;
+  }
+
+  /* Cards principais */
   .recent-post-card {
-    padding-top: 0;
-    margin-top: 0;
+    grid-template-columns: 1fr !important;
+    gap: 1.5rem !important;
+    width: 100% !important;
   }
 
-  #menu-btn {
-    font-size: 3rem;
+  .recent-post-card .image,
+  .recent-post-card .card-banner {
+    width: 100% !important;
+    height: auto !important;
+    overflow: hidden !important;
   }
 
-  .header .logo {
-    font-size: 2.5rem;
+  .recent-post-card img {
+    width: 100% !important;
+    height: auto !important;
+    display: block !important;
+    object-fit: cover;
   }
 
+  /* Evita soma de gap com largura total */
+  .card-wrapper {
+    flex-wrap: wrap !important;
+    justify-content: flex-start !important;
+    width: 100% !important;
+    gap: 1rem !important;
+  }
+
+  /* Garante que nada estoure o container */
+  .card,
+  .recent-post,
+  .aside-card {
+    max-width: 100% !important;
+    overflow-x: hidden !important;
+  }
+
+  /* Tipografia mais leve no mobile */
   /* .section-title {
-    padding-top: 0;
-    font-size: 40px;
+    font-size: 2.4rem !important;
+    text-align: center;
   }
 
   .section-text {
-    font-size: 1.9rem;
-    margin-block-end: 5.5rem;
-      
+    font-size: 1.5rem !important;
+    text-align: justify;
   } */
 }
 
 /**
  * responsive for large than 575px screen
  */
+
+ 
 
 @media (min-width: 575px) {
 

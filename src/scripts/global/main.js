@@ -1,5 +1,6 @@
 // Importação global dos componentes
 import '/src/scripts/global/components/ms-header.js';
+import '/src/scripts/global/components/ms-footer.js'
 
 
 
@@ -8,66 +9,66 @@ import '/src/scripts/global/components/ms-header.js';
 
 //footer
 
-class Footer extends HTMLElement {
-    connectedCallback() {
-        this.innerHTML = `
-                <section class="footer">
+// class Footer extends HTMLElement {
+//     connectedCallback() {
+//         this.innerHTML = `
+//                 <section class="footer">
 
-        <div class="box-container">
+//         <div class="box-container">
 
-            <div class="box">
-                <h3>Acesso rápido</h3>
-                <a class="links" href="/index.html">home</a>
-                <a class="links" href="/src/pages/articles.html">artigos</a>
-                <a class="links" href="/src/pages/ofertas.html">Ofertas</a>
-                <!-- <a class="links" href="#about">Sobre</a> -->
-            </div>
-
-
+//             <div class="box">
+//                 <h3>Acesso rápido</h3>
+//                 <a class="links" href="/index.html">home</a>
+//                 <a class="links" href="/src/pages/articles.html">artigos</a>
+//                 <a class="links" href="/src/pages/ofertas.html">Ofertas</a>
+//                 <!-- <a class="links" href="#about">Sobre</a> -->
+//             </div>
 
 
-            <!-- <div class="box">
-                <h3>Lorem what</h3>
-                <p> Lorem : <i> 7:00 - 10:30pm </i> </p>
-                <p> Lorem : <i> 7:00 - 10:30pm </i> </p>
-                <p> Lorem : <i> 7:00 - 10:30pm </i> </p>
-                <p> Lorem : <i> 7:00 - 10:30pm </i> </p>
-                <p> Lorem : <i> 7:00 - 10:30pm </i> </p>
-                <p> Lorem : <i> 7:00 - 10:30pm </i> </p>
-                <p> Lorem : <i> 7:00 - 10:30pm </i> </p>
-            </div> -->
 
-            <div class="box">
-                <h3>Fale conosco</h3>
-                <p> <i class="fas fa-phone"></i> (14) 99796-7335 </p>
-                <p> <i class="fas fa-envelope"></i> omeusetop@gmail.com </p>
-                <p> <i class="fas fa-map"></i> São Paulo, Brasil </p>
-                <div class="share">
-                    <a href="https://www.youtube.com/@MeuSetop" class="fab fa-youtube"></a>
-                    <a href="https://www.instagram.com/meusetop/" class="fab fa-instagram"></a>
-                    <a href="https://www.tiktok.com/@meusetop" class="fab fa-tiktok"></a>
-                    <a href="#" class="fab fa-twitter"></a>
 
-                </div>
-            </div>
+//             <!-- <div class="box">
+//                 <h3>Lorem what</h3>
+//                 <p> Lorem : <i> 7:00 - 10:30pm </i> </p>
+//                 <p> Lorem : <i> 7:00 - 10:30pm </i> </p>
+//                 <p> Lorem : <i> 7:00 - 10:30pm </i> </p>
+//                 <p> Lorem : <i> 7:00 - 10:30pm </i> </p>
+//                 <p> Lorem : <i> 7:00 - 10:30pm </i> </p>
+//                 <p> Lorem : <i> 7:00 - 10:30pm </i> </p>
+//                 <p> Lorem : <i> 7:00 - 10:30pm </i> </p>
+//             </div> -->
 
-            <div class="box">
-                <h3>Novidades</h3>
-                <p>Increva-se para receber novidades e ofertas</p>
-                <form action="">
-                    <input type="email" name="" class="email" placeholder="Insira seu E-mail" id="">
-                    <input type="submit" value="subscribe" class="btn">
-                </form>
-            </div>
+//             <div class="box">
+//                 <h3>Fale conosco</h3>
+//                 <p> <i class="fas fa-phone"></i> (14) 99796-7335 </p>
+//                 <p> <i class="fas fa-envelope"></i> omeusetop@gmail.com </p>
+//                 <p> <i class="fas fa-map"></i> São Paulo, Brasil </p>
+//                 <div class="share">
+//                     <a href="https://www.youtube.com/@MeuSetop" class="fab fa-youtube"></a>
+//                     <a href="https://www.instagram.com/meusetop/" class="fab fa-instagram"></a>
+//                     <a href="https://www.tiktok.com/@meusetop" class="fab fa-tiktok"></a>
+//                     <a href="#" class="fab fa-twitter"></a>
 
-        </div>
+//                 </div>
+//             </div>
 
-    </section>
-        `;
-    }
-}
+//             <div class="box">
+//                 <h3>Novidades</h3>
+//                 <p>Increva-se para receber novidades e ofertas</p>
+//                 <form action="">
+//                     <input type="email" name="" class="email" placeholder="Insira seu E-mail" id="">
+//                     <input type="submit" value="subscribe" class="btn">
+//                 </form>
+//             </div>
 
-customElements.define('ms-footer', Footer);
+//         </div>
+
+//     </section>
+//         `;
+//     }
+// }
+
+// customElements.define('ms-footer', Footer);
 
 
 
