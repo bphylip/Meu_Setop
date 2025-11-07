@@ -469,9 +469,6 @@ section {
         font-size: 55%;
     }
 
-    .header {
-        padding: 0 2rem;
-    }
 
     section {
         padding: 3rem 2rem;
@@ -492,7 +489,7 @@ section {
 
 @media (max-width:768px) {
 
-    #menu-btn {
+    /* #menu-btn {
         display: inline-block;
 
         &.fa-times {
@@ -520,7 +517,7 @@ section {
                 font-size: 2rem;
             }
         }
-    }
+    } */
 
     .about {
         gap: 3rem;

@@ -1,29 +1,9 @@
-//Header
-class Header extends HTMLElement {
-    connectedCallback() {
-        this.innerHTML = `
-            <header class="header">
+// Importação global dos componentes
+import '/src/scripts/global/components/ms-header.js';
 
-        
-        <a href="/index.html" class="logo"> 
-            <img src="/src/assets/img/global/sm2.svg" class="logo-img">
-            <span>MEU</span>SETOP </a>
 
-        <div id="menu-btn" class="fas fa-bars"></div>
 
-        <nav class="navbar">
-            <a href="/index.html">home</a>
-            <a href="/src/pages/articles.html">Artigos</a>
-            <a href="/src/pages/ofertas.html">Ofertas</a>
-            <!--<a href="#about">Sobre</a>-->
-        </nav>
 
-    </header>
-        `;
-    }
-}
-
-customElements.define('ms-header', Header);
 
 
 //footer
@@ -113,15 +93,15 @@ customElements.define('pre-loader', msload);
 
 // Pre-loader config
 
-window.onload=function(){
+window.onload = function () {
 
     const load = document.querySelector('#preloader')
 
     document.querySelector('#preloader').classList.add('loader-Fade-Out');
     setTimeout(() => {
         load.remove();
-      }, "1100");
-    
+    }, "1100");
+
 
 }
 
@@ -141,25 +121,6 @@ class Credit extends HTMLElement {
 
 customElements.define('ms-credit', Credit);
 
-
-
-
-// Navbar 
-
-
-let menu = document.querySelector('#menu-btn');
-let navbar = document.querySelector('.header .navbar');
-
-
-menu.onclick = () => {
-    menu.classList.toggle('fa-times');
-    navbar.classList.toggle('active');
-};
-
-window.onscroll = () => {
-    menu.classList.remove('fa-times');
-    navbar.classList.remove('active');
-};
 
 
 
@@ -238,7 +199,7 @@ postSR.reveal(`.postSr, .faq`, { origin: 'bottom', delay: 10, viewFactor: 0.1 })
 
 
 
-  
+
 
 
 
