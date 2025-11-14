@@ -999,6 +999,99 @@ ion-icon {
 
 
 
+/* Card banner WhatsApp  */
+
+.ms-card-whatsapp {
+  display: flex;
+  align-items: center;
+  gap: 1.2rem;
+  border: 1px solid #4b4453;
+  padding: 2.2rem 2.6rem;
+  border-radius: 7px;
+  box-shadow: #1f1926 1.95px 1.95px 2.6px;
+  /* background: var(--soft-bg); */
+  background-image: linear-gradient(to top, #121212, #181818, #1e1e1e, #232323, #4b4453);
+  margin: 8rem 0;
+}
+
+
+
+.ms-card-whatsapp__icon img {
+  width: 48px;
+  height: 48px;
+  object-fit: contain;
+}
+
+.ms-card-whatsapp__content {
+  flex: 1;
+
+  strong {
+    font-size: 1.7rem;
+    display: block;
+    color: var(--link-color);
+    /* margin-bottom: .25rem; */
+  }
+  
+  p {
+    margin: 0;
+    font-size: 1.5rem;
+    opacity: 0.95;
+  }
+}
+
+
+.ms-card-whatsapp__button {
+  display: flex;
+  align-items: center;
+  gap: .5rem;
+  background: var(--wa);
+  color: var(--soft-white) !important;
+  padding: 1.2rem 3rem;
+  border-radius: 7px;
+  font-size: 1.5rem;
+  font-weight: 600;
+  text-decoration: none;
+  white-space: nowrap;
+  transition: .1s linear;
+}
+
+.ms-card-whatsapp__button:hover {
+  transform: translateY(-2px);
+}
+
+/* --- Responsivo --- */
+@media (max-width: 640px) {
+  .ms-card-whatsapp {
+    flex-direction: column;
+    text-align: center;
+    /* gap: 1.5rem; */
+  }
+
+  .ms-card-whatsapp__content {
+
+    strong {
+      font-size: 2rem !important;
+      margin-bottom: 0.5rem;
+    }
+    
+    p {
+      font-size: 1.5rem !important;
+      line-height: 2rem !important;
+    }
+  }
+
+  .ms-card-whatsapp__button {
+    width: 80%;
+    justify-content: center;
+  }
+}
+
+                
+
+/* Card banner WhatsApp  */
+
+
+
 
 
 

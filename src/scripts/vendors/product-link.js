@@ -1,5 +1,7 @@
 const productLinks = [
     { id: 'bphylip-profile-img', href: 'https://www.youtube.com/' },
+    { id: 'wa-group', href: '#' },
+    { id: 'tg-group', href: '#' },
 
     // Monitores
     { id: 'monitor-lg-LG24GS60F-B', href: 'https://mercadolivre.com/sec/2R4BM7T' },

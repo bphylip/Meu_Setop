@@ -108,6 +108,34 @@ window.onload = function () {
 
 
 
+//WhatsApp banner
+
+class WaBanner extends HTMLElement {
+    connectedCallback() {
+        this.innerHTML = `
+                        <div class="ms-card-whatsapp">
+                  <div class="ms-card-whatsapp__icon">
+                    <img src="/src/assets/img/global/sm2.svg" alt="MeuSetop">
+                  </div>
+                
+                  <div class="ms-card-whatsapp__content">
+                    <strong>O MeuSetop está no WhatsApp!</strong>
+                    <p>Entre no canal e acompanhe ofertas, notícias e dicas de tecnologia.</p>
+                  </div>
+                
+                  <a href="#"
+                    id="wa-group" 
+                     class="ms-card-whatsapp__button link" 
+                     target="_blank" rel="noopener">
+            
+                     <i class="fa-brands fa-whatsapp"></i> WhatsApp
+                  </a>
+                </div>
+        `;
+    }
+}
+
+customElements.define('ms-wa-banner', WaBanner);
 
 
 //credit
