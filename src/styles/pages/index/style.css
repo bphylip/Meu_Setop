@@ -277,7 +277,7 @@ section {
 
 
 .banner {
-    background: linear-gradient(to top, rgba(0, 0, 0, .9), rgba(0, 0, 0, .2)), url(/src/assets/img/pages/ofertas/6.avif) no-repeat;
+    background: linear-gradient(to top, rgba(0, 0, 0, .4), rgba(0, 0, 0, .2)), url(/src/assets/img/pages/index/banner.svg) no-repeat;
     background-size: cover;
     background-position: center;
     /* background-attachment: relative; */
