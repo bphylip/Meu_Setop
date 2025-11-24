@@ -1,0 +1,11 @@
+User-agent: *
+Allow: /
+Allow: /*.css$
+Allow: /*.js$
+
+Disallow: /*?*
+Disallow: /*&*
+
+Allow: /assets/img/
+
+Sitemap: https://meusetop.com/sitemap.xml
