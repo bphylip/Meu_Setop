@@ -8,4 +8,4 @@ Disallow: /*&*
 
 Allow: /assets/img/
 
-Sitemap: https://meusetop.com/sitemap.xml
+Sitemap: https://www.meusetop.com.br/sitemap.xml

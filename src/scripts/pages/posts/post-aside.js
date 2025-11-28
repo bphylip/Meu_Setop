@@ -23,7 +23,7 @@ class Popular extends HTMLElement {
                     <div class="card-content">
 
                       <h4 class="headline headline-4 card-title">
-                        <a href="/src/pages/posts/guia-de-compra-pc-gamer.html"
+                        <a href="/posts/guia-de-compra-pc-gamer.html"
                           class="link hover-2">Guia de compra PC Gamer</a>
                       </h4>
 
@@ -50,7 +50,7 @@ class Popular extends HTMLElement {
                     <div class="card-content">
 
                       <h4 class="headline headline-4 card-title">
-                        <a href="/src/pages/posts/como-escolher-placa-de-video-ideal.html" class="link hover-2">Qual Placa
+                        <a href="/posts/como-escolher-placa-de-video-ideal.html" class="link hover-2">Qual Placa
                           de
                           Vídeo Comprar? Veja Como Escolher Sua Placa de Vídeo!</a>
                       </h4>
@@ -77,7 +77,7 @@ class Popular extends HTMLElement {
                     <div class="card-content">
 
                       <h4 class="headline headline-4 card-title">
-                        <a href="/src/pages/posts/montando-computador-entenda-cada-peca.html" class="link hover-2">Montando um Computador? Entenda Cada Peça e Escolha Certo!</a>
+                        <a href="/posts/montando-computador-entenda-cada-peca.html" class="link hover-2">Montando um Computador? Entenda Cada Peça e Escolha Certo!</a>
                       </h4>
 
                       <div class="warpper">
@@ -102,7 +102,7 @@ class Popular extends HTMLElement {
                     <div class="card-content">
 
                       <h4 class="headline headline-4 card-title">
-                        <a href="/src/pages/posts/melhores-monitores-para-jogos-e-multitarefa.html" class="link hover-2">Guia: Melhores monitores para jogos e multitarefa</a>
+                        <a href="/posts/melhores-monitores-para-jogos-e-multitarefa.html" class="link hover-2">Guia: Melhores monitores para jogos e multitarefa</a>
                       </h4>
 
                       <div class="warpper">
@@ -127,7 +127,7 @@ class Popular extends HTMLElement {
                     <div class="card-content">
 
                       <h4 class="headline headline-4 card-title">
-                        <a href="/src/pages/posts/upgrade-pc-por-onde-comecar.html" class="link hover-2">Saiba a ordem certa para fazer upgrade no seu PC!</a>
+                        <a href="/posts/upgrade-pc-por-onde-comecar.html" class="link hover-2">Saiba a ordem certa para fazer upgrade no seu PC!</a>
                       </h4>
 
                       <div class="warpper">
@@ -176,7 +176,7 @@ class RecomendationPost extends HTMLElement {
                     <div class="card-content">
 
                       <h4 class="headline headline-4 card-title">
-                        <a href="/src/pages/posts/como-escolher-fonte-pc-gamer.html"
+                        <a href="/posts/como-escolher-fonte-pc-gamer.html"
                           class="link hover-2">Guia Definitivo:
                           Como Escolher a Fonte Perfeita para Seu PC!</a>
                       </h4>
@@ -205,7 +205,7 @@ class RecomendationPost extends HTMLElement {
                     <div class="card-content">
 
                       <h4 class="headline headline-4 card-title">
-                        <a href="/src/pages/posts/dual-channel-memoria-ram.html" class="link hover-2">Dual Channel em
+                        <a href="/posts/dual-channel-memoria-ram.html" class="link hover-2">Dual Channel em
                           Memória RAM: O que é e por que usar!</a>
                       </h4>
 
@@ -232,7 +232,7 @@ class RecomendationPost extends HTMLElement {
                     <div class="card-content">
 
                       <h4 class="headline headline-4 card-title">
-                        <a href="/src/pages/posts/Os-5-Principais-Tipos-de-Tela-de-Monitores.html" class="link hover-2">Os
+                        <a href="/posts/Os-5-Principais-Tipos-de-Tela-de-Monitores.html" class="link hover-2">Os
                           5 Principais Tipos de Tela de Monitores</a>
                       </h4>
 
@@ -259,7 +259,7 @@ class RecomendationPost extends HTMLElement {
                     <div class="card-content">
 
                       <h4 class="headline headline-4 card-title">
-                        <a href="/src/pages/posts/tipos-de-teclado-guia-completo.html" class="link hover-2">Qual o Melhor
+                        <a href="/posts/tipos-de-teclado-guia-completo.html" class="link hover-2">Qual o Melhor
                           Tipo de Teclado para Você? Entenda Antes de Comprar!</a>
                       </h4>
 

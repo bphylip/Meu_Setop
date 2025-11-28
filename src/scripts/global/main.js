@@ -19,8 +19,8 @@ import '/src/scripts/global/components/ms-footer.js'
 //             <div class="box">
 //                 <h3>Acesso rápido</h3>
 //                 <a class="links" href="/index.html">home</a>
-//                 <a class="links" href="/src/pages/articles.html">artigos</a>
-//                 <a class="links" href="/src/pages/ofertas.html">Ofertas</a>
+//                 <a class="links" href="articles.html">artigos</a>
+//                 <a class="links" href="ofertas.html">Ofertas</a>
 //                 <!-- <a class="links" href="#about">Sobre</a> -->
 //             </div>
 
