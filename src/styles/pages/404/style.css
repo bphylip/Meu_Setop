@@ -1,0 +1,444 @@
+@import 'https://fonts.googleapis.com/css?family=Inconsolata';
+@import url(/color.css);
+
+
+
+html {
+    font-size: 82.5%;
+    scroll-behavior: smooth;
+    scroll-padding-top: 5rem;
+    overflow-x: hidden;
+
+    /* Scrollbar */
+    &::-webkit-scrollbar {
+        width: 2px;
+    }
+
+    &::-webkit-scrollbar-track {
+        background: var(--second-color);
+    }
+
+    &::-webkit-scrollbar-thumb {
+        background: var(--primary-color);
+    }
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+
+    box-sizing: border-box;
+
+    background-color: #000;
+    background-image: radial-gradient(#262A31, #0E1116), url("/src/assets/img/pages/404/noise.webp");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+
+
+    font-family: 'Inconsolata', Helvetica, sans-serif;
+
+    /* Texto responsivo */
+    font-size: clamp(1rem, 1.2vw + 0.5rem, 1.5rem);
+    color: var(--white);
+
+    text-align: center;
+
+    text-shadow:
+        0 0 1ex rgba(180, 148, 255, 0.5),
+        0 0 2px rgba(255, 255, 255, 0.8);
+}
+
+
+/* ============================
+   NOISE E OVERLAY CRT
+   ============================ */
+.noise {
+    pointer-events: none;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-image: url("/src/assets/img/pages/404/noise.webp");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    z-index: -1;
+    opacity: .01;
+}
+
+.overlay {
+    pointer-events: none;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background:
+        repeating-linear-gradient(180deg,
+            rgba(0, 0, 0, 0) 0,
+            rgba(0, 0, 0, 0.3) 50%,
+            rgba(0, 0, 0, 0) 100%);
+    background-size: auto 4px;
+    z-index: 1;
+}
+
+.overlay::before {
+    content: "";
+    pointer-events: none;
+    position: absolute;
+    inset: 0;
+
+    background-image: linear-gradient(0deg,
+            transparent 0%,
+            rgba(134, 76, 255, 0.2) 2%,
+            rgba(134, 76, 255, 0.5) 3%,
+            rgba(134, 76, 255, 0.2) 3%,
+            transparent 100%);
+    background-repeat: no-repeat;
+
+    animation: scan 7.5s linear infinite;
+}
+
+@keyframes scan {
+    0% {
+        background-position: 0 -100vh;
+    }
+
+    35%,
+    100% {
+        background-position: 0 100vh;
+    }
+}
+
+
+/* ============================
+   LOGO 
+   ============================ */
+.bglogo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 100%;
+    margin-top: clamp(5rem, 10vw, 10rem);
+}
+
+.bglogo .logo {
+    width: clamp(15rem, 15vw, 25rem);
+    max-width: 90vw;
+    height: auto;
+
+    filter: hue-rotate(340deg) brightness(110%);
+    animation: glitch 2.9s linear infinite;
+}
+
+/* ANIMAÇÃO GLITCH da logo */
+@keyframes glitch {
+
+    2%,
+    64% {
+        transform: translate(3px, 0) skew(0deg);
+    }
+
+    4%,
+    60% {
+        transform: translate(-2px, 0) skew(0deg);
+    }
+
+    62% {
+        transform: translate(0, 0) skew(5deg);
+    }
+}
+
+/* glitch top */
+.logo:before {
+    animation: glitchTop 1s linear infinite;
+    clip-path: polygon(0 0, 100% 0, 100% 35%, 0 40%);
+}
+
+@keyframes glitchTop {
+
+    2%,
+    64% {
+        transform: translate(2px, -2px);
+    }
+
+    4%,
+    60% {
+        transform: translate(2px, -2px);
+    }
+
+    62% {
+        transform: translate(15px, -1px) skew(-13deg);
+    }
+}
+
+/* glitch bottom */
+.logo:after {
+    animation: glitchBottom 1s linear infinite;
+    clip-path: polygon(0 67%, 100% 67%, 100% 100%, 0 100%);
+}
+
+@keyframes glitchBottom {
+
+    2%,
+    64% {
+        transform: translate(0, 0);
+    }
+
+    4%,
+    60% {
+        transform: translate(0, 0);
+    }
+
+    62% {
+        transform: translate(-30px, 5px) skew(21deg);
+    }
+}
+
+
+
+/* ============================
+   TERMINAL — totalmente responsivo
+   ============================ */
+.terminal {
+    width: min(50vw);
+    margin-top: 1rem;
+
+    text-transform: uppercase;
+    text-align: center;
+
+    line-height: 1.6;
+    padding: 1rem 2rem;
+
+    animation: glitch 5s ease-in-out infinite;
+}
+
+/* Título 404 */
+.terminal .error {
+    padding: 0.4rem;
+    border-radius: 0.5rem;
+
+    font-size: clamp(2rem, 2.2rem, 4rem);
+
+    background: linear-gradient(315deg,
+            #0812C3 0%, #0812C3 4%,
+            #1415C7 4.1%, #1415C7 8%,
+            #1E18CB 8.1%, #1E18CB 12%,
+            #291ACE 12.1%, #291ACE 16%,
+            #331CD4 16.1%, #331CD4 20%,
+            #3C1ED7 20.1%, #3C1ED7 24%,
+            #4420DA 24.1%, #4420DA 28%,
+            #4C22DD 28.1%, #4C22DD 32%,
+            #5424E0 32.1%, #5424E0 36%,
+
+            /* --- Centro reforçado (área brilhante) --- */
+            #5C26E3 36.1%, #5C26E3 40%,
+            #6427E5 40.1%, #6427E5 44%,
+            #6B28E7 44.1%, #6B28E7 48%,
+            #7229E9 48.1%, #7229E9 52%,
+            #782AEB 52.1%, #782AEB 56%,
+            #7D2AEC 56.1%, #7D2AEC 60%,
+            #812AEC 60.1%, #812AEC 64%,
+            #820FEC 64.1%, #820FEC 68%,
+
+            /* --- Voltando ao escuro --- */
+            #7828EB 68.1%, #7828EB 72%,
+            #6F25E8 72.1%, #6F25E8 76%,
+            #6522E4 76.1%, #6522E4 80%,
+            #5A1EDF 80.1%, #5A1EDF 84%,
+            #4D1AD9 84.1%, #4D1AD9 88%,
+            #3D16D2 88.1%, #3D16D2 92%,
+            #2A12C9 92.1%, #2A12C9 96%,
+            #0812C3 96.1%, #0812C3 100%);
+
+    background-size: 120% 120%;
+    animation:
+        crtShift 4.5s ease-in-out infinite,
+        crtJitter 90ms infinite,
+        crtPulse 8s ease-in-out infinite;
+
+}
+
+@keyframes crtShift {
+    0% {
+        background-position: 50% 50%;
+    }
+
+    25% {
+        background-position: 52% 48%;
+    }
+
+    50% {
+        background-position: 49% 51%;
+    }
+
+    75% {
+        background-position: 51% 49%;
+    }
+
+    100% {
+        background-position: 50% 50%;
+    }
+}
+
+/* --- Micro jitter (tremidinha CRT) --- */
+@keyframes crtJitter {
+    0% {
+        transform: translate(0, 0);
+    }
+
+    25% {
+        transform: translate(-1px, 0.4px);
+    }
+
+    50% {
+        transform: translate(1px, -0.4px);
+    }
+
+    75% {
+        transform: translate(-0.6px, 0.2px);
+    }
+
+    100% {
+        transform: translate(0, 0);
+    }
+}
+
+/* --- Pulso de brilho no centro (CRT “piscando”) --- */
+@keyframes crtPulse {
+    0% {
+        filter: brightness(1);
+    }
+
+    40% {
+        filter: brightness(1.18);
+    }
+
+    60% {
+        filter: brightness(1.22);
+    }
+
+    100% {
+        filter: brightness(1);
+    }
+}
+
+
+/* ============================
+   OUTPUT — parágrafo estilo terminal
+   ============================ */
+.output {
+    margin: 1rem 0;
+    font-size: clamp(1.2rem, 1.5vw, 1.6rem);
+
+    color: #fff;
+    text-shadow:
+        0 0 1px var(--primary-color),
+        0 0 2px #0812C3;
+
+    position: relative;
+    padding-left: 2.2rem;
+    /* espaço para >> */
+
+}
+
+.output .ms {
+    color: var(--soft-white);
+    text-decoration: none;
+    letter-spacing: 2px;
+    font-weight: 1000;
+    word-break: break-word;
+    font-size: clamp(1.3rem, 1.9vw, 1.6rem);
+    animation: glow 1.5s linear infinite alternate;
+
+}
+
+
+
+@keyframes glow {
+
+    0%,
+    18%,
+    22%,
+    25%,
+    53%,
+    57%,
+    60% {
+
+        text-shadow:
+            0 0 1px var(--primary-color),
+            0 0 8px #ff0099,
+            0 0 12px #6e0dd0,
+            0 0 15px #099fff;
+
+    }
+
+    10%,
+    20%,
+    23%,
+    24%,
+    55% {
+        text-shadow: none;
+    }
+}
+
+
+
+.output::before {
+    content: ">>";
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+
+/* ============================
+   LINKS
+   ============================ */
+a {
+    color: var(--link-color);
+    text-decoration: none;
+    letter-spacing: 1px;
+    font-weight: 700;
+    word-break: break-word;
+    font-size: clamp(1.3rem, 1.6vw, 1.4rem);
+    transition: font-size 0.1s ease;
+}
+
+a::before {
+    content: "[";
+}
+
+a::after {
+    content: "]";
+}
+
+a:hover{
+    font-size: clamp(1.4rem, 1.7vw, 1.5rem);
+    color: var(--white);
+}
+
+
+/* ============================
+   ERROR CODE (404)
+   ============================ */
+.errorcode {
+    color: white;
+    text-shadow: 0 0 15px rgba(180, 148, 255, 0.8);
+}
+
+
+/* ============================
+   MEDIA QUERIES 
+   ============================ */
+@media (max-width: 600px) {
+
+
+    .terminal {
+        width: min(80vw);
+    }
+
+    .output {
+        padding-left: 1.8rem;
+    }
+}

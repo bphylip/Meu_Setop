@@ -4,38 +4,6 @@
 
 :root {
 
-  /** COLORS */
-
-  /** Background colors */
-  --bg-wild-blue-yonder: hsla(216, 33%, 68%, 1);
-  --bg-carolina-blue: hsla(199, 89%, 49%, 1);
-  --bg-prussian-blue: hsla(216, 33%, 20%, 1);
-  --bg-oxford-blue: hsla(222, 44%, 13%, 1);
-  --bg-oxford-blue-2: hsla(222, 47%, 11%, 1);
-
-  /** Text colors */
-  --text-white: hsla(0, 0%, 100%, 1);
-  --text-alice-blue: hsla(216, 100%, 95%, 1);
-  --text-columbia-blue: hsla(199, 69%, 84%, 1);
-  --text-wild-blue-yonder: hsla(216, 33%, 68%, 1);
-  --text-carolina-blue: hsla(199, 89%, 49%, 1);
-  --text-shadow-blue: hsla(217, 24%, 59%, 1);
-  --text-slate-gray: hsla(217, 17%, 48%, 1);
-
-  /** Gradient colors */
-  --gradient-1: linear-gradient(90deg, #0ea5ea, #0bd1d1 51%);
-  --gradient-2: linear-gradient(90deg, #0ea5ea, #0bd1d1 51%, #0ea5ea);
-  --gradient-3: linear-gradient(0deg, #000d1a, transparent);
-
-  /** Border colors */
-  --border-wild-blue-yonder: hsla(216, 33%, 68%, 1);
-  --border-prussian-blue: hsla(216, 33%, 20%, 1);
-  --border-white: hsl(0, 0%, 100%);
-  --border-white-alpha-15: hsla(0, 0%, 100%, 0.15);
-
-  /** Default colors */
-  --white: hsl(0, 0%, 100%, 1);
-  --black: hsl(0, 0%, 0%, 1);
 
   /**
    * TYPOGRAPHY
@@ -272,6 +240,8 @@ ion-icon {
 .card {
   background-color: var(--soft-bg);
   border-radius: .2rem;
+  border: 1px solid var(--tst);
+
 }
 
 .img-holder {
@@ -293,9 +263,10 @@ ion-icon {
 }
 
 .section-text {
-  font-size: 1.9rem;
+  font-size: 2rem !important;
+  font-weight: 400;
   margin-block-end: 3.3rem;
-  color: var(--primary-color);
+  color: var(--white);
 
 }
 
@@ -327,7 +298,7 @@ ion-icon {
 
 
 
-#posts li:nth-child(6) ~ li {
+#posts li:nth-child(6)~li {
   display: none;
 }
 
@@ -391,6 +362,13 @@ ion-icon {
   background: var(--soft-bg);
   border-radius: .2rem;
   padding: 1rem;
+  border: 1px solid var(--tst);
+
+  &:hover {
+    /* border: 1px dotted var(--primary-color);  */
+    box-shadow: 0 0 10px var(--tst);
+
+  }
 
   &:hover .card-banner img {
     transform: scale(1.1);
@@ -433,7 +411,8 @@ ion-icon {
 }
 
 .recent-post-card .card-badge {
-  background: linear-gradient(130deg, var(--primary-color) 93%, transparent 90%);
+  background-color: var(--primary-color);
+  clip-path: polygon(0 0, 100% 0, 100% calc(100% - 10px), calc(100% - 10px) 100%, 0 100%);
   max-width: max-content;
   color: var(--white);
   font-size: var(--fontSize-8);
@@ -660,7 +639,8 @@ ion-icon {
 
 @media (max-width: 450px) {
 
-  html, body {
+  html,
+  body {
     overflow-x: hidden !important;
   }
 
@@ -727,7 +707,7 @@ ion-icon {
  * responsive for large than 575px screen
  */
 
- 
+
 
 @media (min-width: 575px) {
 
