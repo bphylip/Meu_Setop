@@ -27,12 +27,17 @@ const productLinks = [
 
     // Placa de vídeo
     { id: 'AMD-Radeon-RX-6600', href: 'https://mercadolivre.com/sec/2J71e6v' },
+    { id: 'AMD-Radeon-RX-9060XT-16gb', href: 'https://mercadolivre.com/sec/2dnW3Fm' },
+
+    { id: 'NVIDIA-Rtx-3060-12gb', href: 'https://mercadolivre.com/sec/2GKCMPn' },
+    { id: 'NVIDIA-Rtx-4070-12gb', href: 'https://mercadolivre.com/sec/2tkrFzS' },
     { id: 'NVIDIA-Rtx-5060-8gb', href: 'https://mercadolivre.com/sec/1gdZE5A' },
     { id: 'NVIDIA-Rtx-5060TI-16gb', href: 'https://mercadolivre.com/sec/2qadWAw' },
     { id: 'NVIDIA-Rtx-5070-12gb', href: 'https://mercadolivre.com/sec/1wwhzqR' },
 
-    // Cooler
+    // Air Cooler
     { id: 'Air-Deepcool-Ag400', href: 'https://mercadolivre.com/sec/2j7EnuL' },
+    { id: 'Air-Deepcool-GTE-V2', href: 'https://mercadolivre.com/sec/1L3sjvW' },
 
     // Water Cooler
     { id: 'WC-Deepcool-LE240V2', href: 'https://mercadolivre.com/sec/2Jm98ys' },
@@ -48,6 +53,7 @@ const productLinks = [
 
     //Memória RAM
     { id: '2x8-XPG', href: 'xxx' },//específico
+    { id: 'kit-2x8-kingston-fury-DDR4', href: 'https://mercadolivre.com/sec/27HK3Bq' }, //específico
     { id: 'kit-2x16-kingston-fury-DDR5', href: 'https://mercadolivre.com/sec/1qhV3YW' }, //específico
     { id: '16gb-kingston-fury', href: 'https://mercadolivre.com/sec/2AJkqLy' }, //específico
     { id: '8gb-kingston-fury-DDR5', href: 'https://mercadolivre.com/sec/1eBH7ZE' }, //específico
@@ -56,11 +62,18 @@ const productLinks = [
     // Armazenamento
     { id: 'kingston-nv3-500gb', href: 'https://mercadolivre.com/sec/1xuKHqM' },
     { id: 'WD-1TB', href: 'https://mercadolivre.com/sec/1FA5kLK' },
+    { id: 'Kingston-nv3-1TB', href: 'https://mercadolivre.com/sec/2cQJ3Vf' },
+    { id: 'WD-blue-500gb', href: 'https://mercadolivre.com/sec/31ktXM9' },
 
     // Fonte
     { id: 'MSI-magA600DN-600W', href: 'https://mercadolivre.com/sec/1QSWYJs' },
+    { id: 'CORSAIR-Cx650-650W', href: 'https://mercadolivre.com/sec/2R8wP9M' },
     { id: 'GAMEMAX-Gp650-650W', href: 'https://mercadolivre.com/sec/11tf4EK' },
     { id: 'COOLER-MASTER-850W', href: 'https://mercadolivre.com/sec/2E2pw6h' },
+
+    //Gabinetes
+    { id: 'Aerocool-Cylon-RGB', href: 'https://mercadolivre.com/sec/1pAw7mZ' },
+
 ];
 
 

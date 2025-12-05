@@ -158,7 +158,7 @@ function createProductCardHTML(product) {
 
     return `
         <div class="product-card">
-            <a href="#" id="${product.id}" class="link" target="_blank">
+            <a href="#" id="${product.id}" class="link" target="_blank" rel="nofollow sponsored">
                 ${product.badge ? `<div class="badge">${product.badge}</div>` : ''}
                 <div class="product-tumb">
                     <img src="${product.image}" alt="${product.title}">
