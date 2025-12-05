@@ -29,9 +29,9 @@
 
   
       {
-        "source": "/src/pages/posts/:slug.html",
-        "destination": "/posts/:slug",
-        "statusCode": 301
+        "source": "/src/pages/:path*",
+        "destination": "/:path*",
+        "permanent": true
       },
   
 
