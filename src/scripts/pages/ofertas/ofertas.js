@@ -177,7 +177,7 @@ function createProductCardHTML(product) {
                     </div>
                 </div>
                 <div class="buyBtn">
-                    <h4>Aproveitar</h4>
+                    <h3>Aproveitar</h3>
                 </div>
             </a>
         </div>
