@@ -1,6 +1,8 @@
 @import 'https://fonts.googleapis.com/css?family=Inconsolata';
 @import url(/color.css);
 
+
+
 html {
     font-size: 82.5%;
     scroll-behavior: smooth;
@@ -28,55 +30,39 @@ body {
     min-height: 100vh;
     margin: 0;
     padding: 0;
+
     box-sizing: border-box;
+
     background-color: #000;
     background-image: radial-gradient(#262A31, #0E1116), url("/src/assets/img/pages/404/noise.webp");
     background-repeat: no-repeat;
     background-size: 100% 100%;
+
+
     font-family: 'Inconsolata', Helvetica, sans-serif;
+
     /* Texto responsivo */
     font-size: clamp(1rem, 1.2vw + 0.5rem, 1.5rem);
     color: var(--white);
+
     text-align: center;
-    text-shadow: 0 0 1ex rgba(180, 148, 255, 0.5), 0 0 2px rgba(255, 255, 255, 0.8);
+
+    text-shadow:
+        0 0 1ex rgba(180, 148, 255, 0.5),
+        0 0 2px rgba(255, 255, 255, 0.8);
 }
 
-/* Efeito tela ligando e desligando */
-body.content-hidden *:not(#screen):not(#switcher) {
-    opacity: 0;
-    pointer-events: none;
-}
 
+/* Teste de efeito tela ligando e desligando */
 .screen {
     position: fixed;
     top: 0;
     left: 0;
     width: 100vw;
     height: 100vh;
-    background-color: radial-gradient(#262A31, #0E1116);
+    background: #222;
     transform-origin: center center;
     transition: transform 0.25s ease-in, opacity 0.25s ease-in;
-    z-index: 9999;
-    /* padrão: na frente */
-}
-
-/* estado inicial - desligada, invisível, sem animação */
-.screen.initial-off {
-    animation: none !important;
-    transition: none !important;
-    transform: scale(0, 0.001);
-    opacity: 1;
-    background: white;
-    z-index: -1 !important;
-    /* ← atrás do site */
-}
-
-/* tela escondida após animação ON */
-.screen.ready {
-    opacity: 0;
-    pointer-events: none;
-    z-index: -1 !important;
-    /* ← atrás novamente */
 }
 
 /* BOTÃO */
@@ -101,6 +87,8 @@ body.content-hidden *:not(#screen):not(#switcher) {
     animation: turnOn 0.4s forwards ease-in-out;
 }
 
+/* -------- ANIMAÇÃO FIEL AO CODEPEN -------- */
+
 /* DESLIGANDO — tela vira linha e some */
 @keyframes turnOff {
     0% {
@@ -115,7 +103,7 @@ body.content-hidden *:not(#screen):not(#switcher) {
     }
 
     100% {
-        transform: scale(0, 0.001);
+        transform: scale(0, 0.02);
         opacity: 1;
         background: white;
     }
@@ -140,7 +128,13 @@ body.content-hidden *:not(#screen):not(#switcher) {
     }
 }
 
-/* ============================ NOISE E OVERLAY CRT ============================ */
+
+/* fim do teste */
+
+
+/* ============================
+   NOISE E OVERLAY CRT
+   ============================ */
 .noise {
     pointer-events: none;
     position: absolute;
@@ -158,7 +152,11 @@ body.content-hidden *:not(#screen):not(#switcher) {
     position: absolute;
     width: 100%;
     height: 100%;
-    background: repeating-linear-gradient(180deg, rgba(0, 0, 0, 0) 0, rgba(0, 0, 0, 0.3) 50%, rgba(0, 0, 0, 0) 100%);
+    background:
+        repeating-linear-gradient(180deg,
+            rgba(0, 0, 0, 0) 0,
+            rgba(0, 0, 0, 0.3) 50%,
+            rgba(0, 0, 0, 0) 100%);
     background-size: auto 4px;
     z-index: 1;
 }
@@ -168,8 +166,15 @@ body.content-hidden *:not(#screen):not(#switcher) {
     pointer-events: none;
     position: absolute;
     inset: 0;
-    background-image: linear-gradient(0deg, transparent 0%, rgba(134, 76, 255, 0.2) 2%, rgba(134, 76, 255, 0.5) 3%, rgba(134, 76, 255, 0.2) 3%, transparent 100%);
+
+    background-image: linear-gradient(0deg,
+            transparent 0%,
+            rgba(134, 76, 255, 0.2) 2%,
+            rgba(134, 76, 255, 0.5) 3%,
+            rgba(134, 76, 255, 0.2) 3%,
+            transparent 100%);
     background-repeat: no-repeat;
+
     animation: scan 7.5s linear infinite;
 }
 
@@ -184,11 +189,15 @@ body.content-hidden *:not(#screen):not(#switcher) {
     }
 }
 
-/* ============================ LOGO ============================ */
+
+/* ============================
+   LOGO 
+   ============================ */
 .bglogo {
     display: flex;
     align-items: center;
     justify-content: center;
+
     width: 100%;
     margin-top: clamp(5rem, 10vw, 10rem);
 }
@@ -197,6 +206,7 @@ body.content-hidden *:not(#screen):not(#switcher) {
     width: clamp(15rem, 15vw, 25rem);
     max-width: 90vw;
     height: auto;
+
     filter: hue-rotate(340deg) brightness(110%);
     animation: glitch 2.9s linear infinite;
 }
@@ -265,14 +275,21 @@ body.content-hidden *:not(#screen):not(#switcher) {
     }
 }
 
-/* ============================ TERMINAL — totalmente responsivo ============================ */
+
+
+/* ============================
+   TERMINAL — totalmente responsivo
+   ============================ */
 .terminal {
     width: min(50vw);
     margin-top: 1rem;
+
     text-transform: uppercase;
     text-align: center;
+
     line-height: 1.6;
     padding: 1rem 2rem;
+
     animation: glitch 5s ease-in-out infinite;
 }
 
@@ -280,14 +297,46 @@ body.content-hidden *:not(#screen):not(#switcher) {
 .terminal .error {
     padding: 0.4rem;
     border-radius: 0.5rem;
+
     font-size: clamp(2rem, 2.2rem, 4rem);
-    background: linear-gradient(315deg, #0812C3 0%, #0812C3 4%, #1415C7 4.1%, #1415C7 8%, #1E18CB 8.1%, #1E18CB 12%, #291ACE 12.1%, #291ACE 16%, #331CD4 16.1%, #331CD4 20%, #3C1ED7 20.1%, #3C1ED7 24%, #4420DA 24.1%, #4420DA 28%, #4C22DD 28.1%, #4C22DD 32%, #5424E0 32.1%, #5424E0 36%,
+
+    background: linear-gradient(315deg,
+            #0812C3 0%, #0812C3 4%,
+            #1415C7 4.1%, #1415C7 8%,
+            #1E18CB 8.1%, #1E18CB 12%,
+            #291ACE 12.1%, #291ACE 16%,
+            #331CD4 16.1%, #331CD4 20%,
+            #3C1ED7 20.1%, #3C1ED7 24%,
+            #4420DA 24.1%, #4420DA 28%,
+            #4C22DD 28.1%, #4C22DD 32%,
+            #5424E0 32.1%, #5424E0 36%,
+
             /* --- Centro reforçado (área brilhante) --- */
-            #5C26E3 36.1%, #5C26E3 40%, #6427E5 40.1%, #6427E5 44%, #6B28E7 44.1%, #6B28E7 48%, #7229E9 48.1%, #7229E9 52%, #782AEB 52.1%, #782AEB 56%, #7D2AEC 56.1%, #7D2AEC 60%, #812AEC 60.1%, #812AEC 64%, #820FEC 64.1%, #820FEC 68%,
+            #5C26E3 36.1%, #5C26E3 40%,
+            #6427E5 40.1%, #6427E5 44%,
+            #6B28E7 44.1%, #6B28E7 48%,
+            #7229E9 48.1%, #7229E9 52%,
+            #782AEB 52.1%, #782AEB 56%,
+            #7D2AEC 56.1%, #7D2AEC 60%,
+            #812AEC 60.1%, #812AEC 64%,
+            #820FEC 64.1%, #820FEC 68%,
+
             /* --- Voltando ao escuro --- */
-            #7828EB 68.1%, #7828EB 72%, #6F25E8 72.1%, #6F25E8 76%, #6522E4 76.1%, #6522E4 80%, #5A1EDF 80.1%, #5A1EDF 84%, #4D1AD9 84.1%, #4D1AD9 88%, #3D16D2 88.1%, #3D16D2 92%, #2A12C9 92.1%, #2A12C9 96%, #0812C3 96.1%, #0812C3 100%);
+            #7828EB 68.1%, #7828EB 72%,
+            #6F25E8 72.1%, #6F25E8 76%,
+            #6522E4 76.1%, #6522E4 80%,
+            #5A1EDF 80.1%, #5A1EDF 84%,
+            #4D1AD9 84.1%, #4D1AD9 88%,
+            #3D16D2 88.1%, #3D16D2 92%,
+            #2A12C9 92.1%, #2A12C9 96%,
+            #0812C3 96.1%, #0812C3 100%);
+
     background-size: 120% 120%;
-    animation: crtShift 4.5s ease-in-out infinite, crtJitter 90ms infinite, crtPulse 8s ease-in-out infinite;
+    animation:
+        crtShift 4.5s ease-in-out infinite,
+        crtJitter 90ms infinite,
+        crtPulse 8s ease-in-out infinite;
+
 }
 
 @keyframes crtShift {
@@ -354,14 +403,23 @@ body.content-hidden *:not(#screen):not(#switcher) {
     }
 }
 
-/* ============================ OUTPUT — parágrafo estilo terminal ============================ */
+
+/* ============================
+   OUTPUT — parágrafo estilo terminal
+   ============================ */
 .output {
     margin: 1rem 0;
     font-size: clamp(1.2rem, 1.5vw, 1.6rem);
+
     color: #fff;
-    text-shadow: 0 0 1px var(--primary-color), 0 0 2px #0812C3;
+    text-shadow:
+        0 0 1px var(--primary-color),
+        0 0 2px #0812C3;
+
     position: relative;
     padding-left: 2.2rem;
+    /* espaço para >> */
+
 }
 
 .output .ms {
@@ -372,7 +430,10 @@ body.content-hidden *:not(#screen):not(#switcher) {
     word-break: break-word;
     font-size: clamp(1.3rem, 1.9vw, 1.6rem);
     animation: glow 1.5s linear infinite alternate;
+
 }
+
+
 
 @keyframes glow {
 
@@ -383,7 +444,13 @@ body.content-hidden *:not(#screen):not(#switcher) {
     53%,
     57%,
     60% {
-        text-shadow: 0 0 1px var(--primary-color), 0 0 8px #ff0099, 0 0 12px #6e0dd0, 0 0 15px #099fff;
+
+        text-shadow:
+            0 0 1px var(--primary-color),
+            0 0 8px #ff0099,
+            0 0 12px #6e0dd0,
+            0 0 15px #099fff;
+
     }
 
     10%,
@@ -395,6 +462,8 @@ body.content-hidden *:not(#screen):not(#switcher) {
     }
 }
 
+
+
 .output::before {
     content: ">>";
     position: absolute;
@@ -402,7 +471,10 @@ body.content-hidden *:not(#screen):not(#switcher) {
     top: 0;
 }
 
-/* ============================ LINKS ============================ */
+
+/* ============================
+   LINKS
+   ============================ */
 a {
     color: var(--link-color);
     text-decoration: none;
@@ -426,14 +498,22 @@ a:hover {
     color: var(--white);
 }
 
-/* ============================ ERROR CODE (404) ============================ */
+
+/* ============================
+   ERROR CODE (404)
+   ============================ */
 .errorcode {
     color: white;
     text-shadow: 0 0 15px rgba(180, 148, 255, 0.8);
 }
 
-/* ============================ MEDIA QUERIES ============================ */
+
+/* ============================
+   MEDIA QUERIES 
+   ============================ */
 @media (max-width: 600px) {
+
+
     .terminal {
         width: min(80vw);
     }
