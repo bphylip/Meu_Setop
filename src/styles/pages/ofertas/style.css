@@ -75,7 +75,7 @@ section {
         color: var(--primary-color);
     }
 
-    h3 {
+    h1 {
         padding-top: 1rem;
         color: var(--white);
         text-transform: uppercase;
@@ -181,7 +181,7 @@ section {
             margin-bottom: 5px;
         }
 
-        h4 {
+        h2 {
             font-size: 1.5rem;
             display: block;
             text-transform: uppercase;

@@ -165,7 +165,7 @@ function createProductCardHTML(product) {
                 </div>
                 <div class="product-details">
                     <span class="product-catagory">${product.category}</span>
-                    <h4>${product.title}</h4>
+                    <h2>${product.title}</h2>
                     <!-- <p>${product.description}</p> -->
 
                     <div class="rgb-divider"></div>
