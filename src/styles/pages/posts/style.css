@@ -313,31 +313,21 @@ ion-icon {
 /* Post thumb */
 
 .post-thumb {
-  padding: 0;
   align-items: center;
 
 
-
-
   .thumb {
+    max-width: 100%;
+    margin: 0;
     max-height: 55vh;
-    max-width: 95%;
-    margin: auto;
     background-size: cover !important;
     background-position: center center !important;
     align-items: center;
-    border-radius: 1rem;
+    border-radius: calc(1rem - 1px);
     overflow: hidden;
     position: relative;
-
     padding-bottom: 5rem;
-
-    background: linear-gradient(to top, rgba(0, 0, 0, .9), rgba(0, 0, 0, .8), rgba(0, 0, 0, .6), rgba(0, 0, 0, .4), rgba(0, 0, 0, .1));
-    /* background: rgba(34, 34, 34, 0.39); */
-
-
-
-
+    z-index: 10;
 
     &:hover img {
       transform: scale(1.1);
@@ -345,18 +335,12 @@ ion-icon {
 
 
     img {
-
       width: 100%;
       height: auto;
       transition: .4s ease;
       position: relative;
-      /* top: -15rem; */
       z-index: -1;
       filter: blur(0.1px);
-      /* opacity: 23%;       */
-
-
-
     }
 
     .content {
@@ -367,10 +351,11 @@ ion-icon {
       flex-direction: column;
       flex-wrap: wrap;
       width: 90%;
+      z-index: 10;
 
 
 
-      h3 {
+      h1 {
         position: relative;
         font-size: 5rem;
         color: var(--white);
@@ -389,16 +374,28 @@ ion-icon {
 
   }
 
+  .thumb::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to top, rgba(0, 0, 0, .9), rgba(0, 0, 0, .8), rgba(0, 0, 0, .6), rgba(0, 0, 0, .4), rgba(0, 0, 0, .1));
+    z-index: 5;
+    border-radius: inherit;
+  }
+
+
+
+
+
   .author {
     max-width: 95%;
     margin: 10px auto 0 auto;
     background-size: cover !important;
     background-position: center !important;
     border-radius: 1rem;
-
-
-
-    /* background: #00ff66; */
 
     .content-author {
       justify-content: center;
@@ -408,8 +405,6 @@ ion-icon {
       font-size: 1.7rem;
       color: var(--soft-light);
       vertical-align: middle;
-
-
 
       li {
         display: inline-block;
@@ -470,6 +465,65 @@ ion-icon {
 }
 
 
+/* teste rgb  */
+
+/* Definição da Animação de Rotação para o Efeito RGB */
+@keyframes border-rotation {
+  to {
+    background-position: 250% center;
+  }
+}
+
+.post-thumb .thumb-border-container {
+  max-width: 95%;
+  margin: auto;
+  border-radius: 1rem;
+  padding: 1px;
+  position: relative;
+  z-index: 1;
+  transform: translateZ(0);
+  overflow: visible;
+
+  background: linear-gradient(90deg,
+      #ff0000,
+      #ff8000,
+      #ffff00,
+      #00ff00,
+      #0000ff,
+      #ff00ff,
+      #ff0000);
+  background-size: 200% 100%;
+  animation: border-rotation 8s linear alternate infinite;
+}
+
+.post-thumb .thumb-border-container::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+
+  background: linear-gradient(90deg,
+      #ff0000,
+      #ff8000,
+      #ffff00,
+      #00ff00,
+      #0000ff,
+      #ff00ff,
+      #ff0000);
+  background-size: 200% 100%;
+  animation: border-rotation 8s linear alternate infinite;
+  filter: blur(6px);
+  z-index: 0;
+  border-radius: 1rem;
+}
+
+
+/* teste rgb  */
+
+
+
 
 
 /* post area starts */
@@ -502,7 +556,7 @@ ion-icon {
     border-radius: 5px;
     background: var(--soft-bg);
     border: 1px solid var(--tst);
-    
+
   }
 
   .item-container .image-session {
@@ -646,8 +700,15 @@ ion-icon {
     margin: 1.5em 10px;
     padding: 0.5em 10px;
   }
-
   h2 {
+    margin-top: 5rem;
+    margin-bottom: 2rem;
+    position: relative;
+    font-size: 3.5rem;
+    color: var(--white);
+  }
+  
+  h3 {
     margin-top: 2.9rem;
     margin-bottom: 1rem;
     position: relative;
@@ -655,13 +716,6 @@ ion-icon {
     color: var(--primary-color);
   }
 
-  h3 {
-    margin-top: 5rem;
-    margin-bottom: 2rem;
-    position: relative;
-    font-size: 3.5rem;
-    color: var(--white);
-  }
 
   ul li {
     font-family: "Nunito", serif;
@@ -957,6 +1011,7 @@ ion-icon {
         transform-origin: top;
         transform: scaleY(0);
         height: 0;
+        
       }
 
       .active {
@@ -1003,7 +1058,7 @@ ion-icon {
     color: var(--link-color);
     /* margin-bottom: .25rem; */
   }
-  
+
   p {
     margin: 0;
     font-size: 1.5rem;
@@ -1045,7 +1100,7 @@ ion-icon {
       font-size: 2rem !important;
       margin-bottom: 0.5rem;
     }
-    
+
     p {
       font-size: 1.5rem !important;
       line-height: 2rem !important;
@@ -1058,7 +1113,7 @@ ion-icon {
   }
 }
 
-                
+
 
 /* Card banner WhatsApp  */
 
@@ -1113,7 +1168,7 @@ ion-icon {
   .post-thumb {
     .thumb {
       .content {
-        h3 {
+        h1 {
           font-size: 2.9rem;
         }
 
@@ -1195,7 +1250,7 @@ ion-icon {
   .post-thumb {
     .thumb {
       .content {
-        h3 {
+        h1 {
           font-size: 2.9rem;
         }
 
@@ -1253,8 +1308,14 @@ ion-icon {
       line-height: 1.7;
       text-align: justify;
     }
-
     h2 {
+      margin-top: 5rem;
+      margin-bottom: 2rem;
+      position: relative;
+      font-size: 2.8rem;
+      color: var(--white);
+
+    h3 {
       margin-top: 2.9rem;
       margin-bottom: 1.5rem;
       position: relative;
@@ -1262,20 +1323,14 @@ ion-icon {
       color: var(--primary-color);
     }
 
-    h3 {
-      margin-top: 5rem;
-      margin-bottom: 2rem;
-      position: relative;
-      font-size: 2.8rem;
-      color: var(--white);
     }
 
     ul li {
       font-family: "Nunito", serif;
       color: var(--white);
       font-size: 2.0rem;
-      line-height: 1.9;
-      text-align: justify;
+      line-height: 1.6;
+      text-align: start;
       list-style: inside;
     }
 
@@ -1528,9 +1583,9 @@ ion-icon {
     margin: 0 20px 1.5em !important;
   }
 
-  .faq{
-    .box-container{
-      .box{
+  .faq {
+    .box-container {
+      .box {
         width: 90%;
       }
     }

@@ -5,9 +5,9 @@ class Popular extends HTMLElement {
 
                     <div class="card aside-card">
 
-              <h3 class="headline headline-2 aside-title">
+              <h2 class="headline headline-2 aside-title">
                 <span class="span">Mais Lidas</span>
-              </h3>
+              </h2>
 
               <ul class="popular-list">
 
@@ -22,10 +22,10 @@ class Popular extends HTMLElement {
 
                     <div class="card-content">
 
-                      <h4 class="headline headline-4 card-title">
+                      <h3 class="headline headline-4 card-title">
                         <a href="/posts/guia-de-compra-pc-gamer.html"
                           class="link hover-2">Guia de compra PC Gamer</a>
-                      </h4>
+                      </h3>
 
                       <div class="warpper">
                         <p class="card-subtitle">20 mins read</p>
@@ -49,11 +49,11 @@ class Popular extends HTMLElement {
 
                     <div class="card-content">
 
-                      <h4 class="headline headline-4 card-title">
+                      <h3 class="headline headline-4 card-title">
                         <a href="/posts/como-escolher-placa-de-video-ideal.html" class="link hover-2">Qual Placa
                           de
                           Vídeo Comprar? Veja Como Escolher Sua Placa de Vídeo!</a>
-                      </h4>
+                      </h3>
 
                       <div class="warpper">
                         <p class="card-subtitle">15 mins read</p>
@@ -76,9 +76,9 @@ class Popular extends HTMLElement {
 
                     <div class="card-content">
 
-                      <h4 class="headline headline-4 card-title">
+                      <h3 class="headline headline-4 card-title">
                         <a href="/posts/montando-computador-entenda-cada-peca.html" class="link hover-2">Montando um Computador? Entenda Cada Peça e Escolha Certo!</a>
-                      </h4>
+                      </h3>
 
                       <div class="warpper">
                         <p class="card-subtitle">15 mins read</p>
@@ -101,9 +101,9 @@ class Popular extends HTMLElement {
 
                     <div class="card-content">
 
-                      <h4 class="headline headline-4 card-title">
+                      <h3 class="headline headline-4 card-title">
                         <a href="/posts/melhores-monitores-para-jogos-e-multitarefa.html" class="link hover-2">Guia: Melhores monitores para jogos e multitarefa</a>
-                      </h4>
+                      </h3>
 
                       <div class="warpper">
                         <p class="card-subtitle">10 mins read</p>
@@ -126,9 +126,9 @@ class Popular extends HTMLElement {
 
                     <div class="card-content">
 
-                      <h4 class="headline headline-4 card-title">
+                      <h3 class="headline headline-4 card-title">
                         <a href="/posts/upgrade-pc-por-onde-comecar.html" class="link hover-2">Saiba a ordem certa para fazer upgrade no seu PC!</a>
-                      </h4>
+                      </h3>
 
                       <div class="warpper">
                         <p class="card-subtitle">15 mins read</p>
@@ -158,9 +158,9 @@ class RecomendationPost extends HTMLElement {
 
                     <div class="card aside-card">
 
-              <h3 class="headline headline-2 aside-title">
+              <h2 class="headline headline-2 aside-title">
                 <span class="span">Recomendados</span>
-              </h3>
+              </h2>
 
               <ul class="popular-list">
 
@@ -175,11 +175,11 @@ class RecomendationPost extends HTMLElement {
 
                     <div class="card-content">
 
-                      <h4 class="headline headline-4 card-title">
+                      <h3 class="headline headline-4 card-title">
                         <a href="/posts/como-escolher-fonte-pc-gamer.html"
                           class="link hover-2">Guia Definitivo:
                           Como Escolher a Fonte Perfeita para Seu PC!</a>
-                      </h4>
+                      </h3>
 
                       <div class="warpper">
                         <p class="card-subtitle">15 mins read</p>
@@ -204,10 +204,10 @@ class RecomendationPost extends HTMLElement {
 
                     <div class="card-content">
 
-                      <h4 class="headline headline-4 card-title">
+                      <h3 class="headline headline-4 card-title">
                         <a href="/posts/dual-channel-memoria-ram.html" class="link hover-2">Dual Channel em
                           Memória RAM: O que é e por que usar!</a>
-                      </h4>
+                      </h3>
 
                       <div class="warpper">
                         <p class="card-subtitle">15 mins read</p>
@@ -231,10 +231,10 @@ class RecomendationPost extends HTMLElement {
 
                     <div class="card-content">
 
-                      <h4 class="headline headline-4 card-title">
+                      <h3 class="headline headline-4 card-title">
                         <a href="/posts/Os-5-Principais-Tipos-de-Tela-de-Monitores.html" class="link hover-2">Os
                           5 Principais Tipos de Tela de Monitores</a>
-                      </h4>
+                      </h3>
 
                       <div class="warpper">
                         <p class="card-subtitle">20 mins read</p>
@@ -258,10 +258,10 @@ class RecomendationPost extends HTMLElement {
 
                     <div class="card-content">
 
-                      <h4 class="headline headline-4 card-title">
+                      <h3 class="headline headline-4 card-title">
                         <a href="/posts/tipos-de-teclado-guia-completo.html" class="link hover-2">Qual o Melhor
                           Tipo de Teclado para Você? Entenda Antes de Comprar!</a>
-                      </h4>
+                      </h3>
 
                       <div class="warpper">
                         <p class="card-subtitle">15 mins read</p>
