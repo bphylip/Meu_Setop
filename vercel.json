@@ -52,7 +52,7 @@
         "destination": "/posts/:slug",
         "statusCode": 301
       }
-  
+
 
     ]
   }
