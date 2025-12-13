@@ -47,7 +47,7 @@ import '/src/scripts/global/components/ms-footer.js'
 //                     <a href="https://www.youtube.com/@MeuSetop" class="fab fa-youtube"></a>
 //                     <a href="https://www.instagram.com/meusetop/" class="fab fa-instagram"></a>
 //                     <a href="https://www.tiktok.com/@meusetop" class="fab fa-tiktok"></a>
-//                     <a href="#" class="fab fa-twitter"></a>
+//                     <a href="https://x.com/MeuSetop" class="fab fa-twitter"></a>
 
 //                 </div>
 //             </div>
