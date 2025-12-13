@@ -57,6 +57,51 @@
     <link rel="preload" href="/src/assets/img/pages/index/bg-2.jpg" as="image">
     <link rel="preload" href="/src/assets/img/pages/index/bg-3.webp" as="image">
 
+    <!-- Script Schema  -->
+
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Organization",
+      "@id": "https://www.meusetop.com.br/#organization",
+      "name": "Meu Setop",
+      "url": "https://www.meusetop.com.br",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "/src/assets/img/global/sm2.svg"
+      }
+    },
+    {
+      "@type": "WebSite",
+      "url": "https://www.meusetop.com.br",
+      "name": "Meu Setop",
+      "description": "No Meu Setop você encontra as melhores ofertas e dicas para montar o setup perfeito, seja para jogos, home office ou tecnologia.",
+      "publisher": {
+        "@id": "https://www.meusetop.com.br/#organization"
+      },
+      "potentialAction": {
+        "@type": "SearchAction",
+        "target": "https://www.meusetop.com.br/search/?q={search_term_string}",
+        "query-input": "required name=search_term_string"
+      }
+    },
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Início",
+          "item": "https://www.meusetop.com.br"
+        }
+      ]
+    }
+  ]
+}
+</script>
+
 </head>
 
 <body>
@@ -76,9 +121,6 @@
     <!-- home section starts -->
 
     <section class="home" id="home">
-        <!-- <div class="spacer"></div>
-
-        <h1 class="heading glow">  </h1> -->
 
         <div class="swiper home-slider">
 
@@ -173,8 +215,7 @@
                             </div>
                             <h3>Guia: Melhores monitores para jogos e multitarefa</h3>
                             <p>Confira nossas recomendações dos melhores monitores gamer para jogos e produtividade.</p>
-                            <a href="posts/melhores-monitores-para-jogos-e-multitarefa.html"
-                                class="btn2">Leia
+                            <a href="posts/melhores-monitores-para-jogos-e-multitarefa.html" class="btn2">Leia
                                 Mais</a>
                         </div>
                     </div>
