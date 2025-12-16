@@ -98,7 +98,7 @@ const productsData = [
         price: "429,14",
         image: "/src/assets/img/pages/ofertas/Products/16gb-kingston-fury.webp",
         badge: "RECOMENDADO",
-        rating: 4.9
+        rating: 5
     },
     {
         id: "8gb-kingston-fury-DDR5",
