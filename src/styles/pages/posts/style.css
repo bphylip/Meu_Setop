@@ -319,7 +319,7 @@ ion-icon {
   .thumb {
     max-width: 100%;
     margin: 0;
-    max-height: 55vh;
+    /* max-height: 55vh; */
     background-size: cover !important;
     background-position: center center !important;
     align-items: center;
@@ -329,18 +329,35 @@ ion-icon {
     padding-bottom: 5rem;
     z-index: 10;
 
+    overflow: hidden;
+
+    height: 260px;
+
     &:hover img {
       transform: scale(1.1);
     }
 
 
     img {
-      width: 100%;
-      height: auto;
+      /* width: 100%; */
+      /* height: auto; */
       transition: .4s ease;
-      position: relative;
-      z-index: -1;
+
+      position: absolute;
+  inset: 0;
+
+  width: 100%;
+  height: 100%;
+
+  object-fit: cover;
+  object-position: center;
+
+  z-index: 1;
+      /* position: relative; */
+      /* z-index: -1; */
       filter: blur(0.1px);
+      
+      
     }
 
     .content {
@@ -1490,8 +1507,11 @@ ion-icon {
 
   }
 
-
-
+  @media (min-width: 768px) {
+    .post-thumb .thumb {
+      height: 45vh;
+    }
+  }
 
   /**
    * RECENT POST
@@ -1502,26 +1522,6 @@ ion-icon {
   }
 
 }
-
-
-/* @media screen and (max-width:780px) {
-
-  .groups .item-card {
-      overflow: hidden;
-      flex-direction: column !important;
-      flex-wrap: wrap !important;
-
-    }
-
-  .groups {
-    width: 96%;
-  }
-
-  .groups li:hover {
-    transform: none;
-    box-shadow: none;
-  }
-} */
 
 
 
@@ -1665,6 +1665,11 @@ ion-icon {
     grid-template-columns: 1fr 0.4fr;
     align-items: flex-start;
 
+  }
+
+  .post-thumb .thumb {
+    height: 55vh;
+    max-height: 620px;
   }
 
 
