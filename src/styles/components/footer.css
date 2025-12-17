@@ -40,7 +40,7 @@ section {
     text-transform: capitalize;
 
     .box-container {
-        
+
         display: grid;
         grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
         gap: 1.5rem;
@@ -67,9 +67,7 @@ section {
 
             p {
                 font-size: 1.5rem;
-                color: var(--soft-light
-                
-                );
+                color: var(--soft-light);
                 padding: 1rem 0;
 
                 i {
@@ -82,21 +80,37 @@ section {
                 padding: 1rem 0;
 
                 a {
+
                     height: 4.5rem;
                     width: 4.5rem;
-                    line-height: 4.5rem;
-                    font-size: 1.7rem;
-                    color: white;
+
+                    display: inline-flex;
+                    align-items: center;
+                    justify-content: center;
+                    vertical-align: middle;
+
                     background: var(--soft-bg);
                     border-radius: 50%;
                     margin-right: .5rem;
-                    text-align: center;
 
                     &:hover {
                         background: var(--primary-color);
                     }
                 }
 
+            }
+
+            .share a {
+
+                color: white;
+            }
+
+            .share svg {
+
+                fill: currentColor;
+                width: 1.7rem;
+                height: 1.7rem;
+                display: block;
             }
 
             form {
@@ -174,6 +188,3 @@ section {
         font-size: 50%;
     }
 }
-
-
-
