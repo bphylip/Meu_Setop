@@ -805,12 +805,13 @@ ion-icon {
     p {
       font-size: 2.0rem;
       line-height: 1.9;
-      text-align: center;
+      text-align: justify;
+      font-style: italic;
     }
 
     .css {
       color: var(--primary-color);
-      font-size: 4.0rem;
+      font-size: 2.5rem;
       padding: 0rem 1rem;
     }
   }
@@ -1052,7 +1053,7 @@ ion-icon {
   border: 1px solid var(--tst);
   padding: 2.2rem 2.6rem;
   border-radius: 7px;
-  box-shadow: var(--tst) 1.95px 1.95px 2.6px;
+  /* box-shadow: var(--tst) 1.95px 1.95px 2.6px; */
   background: var(--soft-bg);
   /* background-image: linear-gradient(to top, #121212, #181818, #1e1e1e, #232323, #4b4453); */
   margin: 8rem 0;
@@ -1236,24 +1237,6 @@ ion-icon {
     }
 
   }
-
-  /* @media screen and (max-width:560px){
-    .groups .item-card {
-      overflow: hidden;
-      
-
-    }
-
-    .groups .image-session {
-      float: none;
-      margin-right: 0;
-    }
-
-    .groups .image-session .img {
-      width: 100%;
-    }
-  } */
-
 
 
 }

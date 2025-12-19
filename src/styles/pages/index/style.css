@@ -170,7 +170,7 @@ section {
     .content {
         flex: 1 1 42rem;
 
-        span {
+        h2 {
             font-size: 2rem;
             color: var(--primary-color);
         }
